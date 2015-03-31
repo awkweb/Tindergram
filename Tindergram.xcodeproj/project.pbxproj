@@ -13,6 +13,9 @@
 		055F5B3B1ACB029D00B0B500 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055F5B3A1ACB029D00B0B500 /* Images.xcassets */; };
 		055F5B3E1ACB029D00B0B500 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055F5B3C1ACB029D00B0B500 /* LaunchScreen.xib */; };
 		055F5B4A1ACB029E00B0B500 /* TindergramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B491ACB029E00B0B500 /* TindergramTests.swift */; };
+		055F5B551ACB031800B0B500 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B541ACB031800B0B500 /* CardView.swift */; };
+		055F5B571ACB0A4800B0B500 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B561ACB0A4800B0B500 /* SwipeView.swift */; };
+		055F5B5A1ACB0D8300B0B500 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B591ACB0D8300B0B500 /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		055F5B431ACB029E00B0B500 /* TindergramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TindergramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055F5B481ACB029E00B0B500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		055F5B491ACB029E00B0B500 /* TindergramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TindergramTests.swift; sourceTree = "<group>"; };
+		055F5B541ACB031800B0B500 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		055F5B561ACB0A4800B0B500 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		055F5B591ACB0D8300B0B500 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				055F5B331ACB029D00B0B500 /* AppDelegate.swift */,
-				055F5B351ACB029D00B0B500 /* ViewController.swift */,
+				055F5B581ACB0D5800B0B500 /* ViewControllers */,
+				055F5B531ACB02E200B0B500 /* Views */,
 				055F5B371ACB029D00B0B500 /* Main.storyboard */,
 				055F5B3A1ACB029D00B0B500 /* Images.xcassets */,
 				055F5B3C1ACB029D00B0B500 /* LaunchScreen.xib */,
@@ -110,6 +117,24 @@
 				055F5B481ACB029E00B0B500 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		055F5B531ACB02E200B0B500 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				055F5B541ACB031800B0B500 /* CardView.swift */,
+				055F5B561ACB0A4800B0B500 /* SwipeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		055F5B581ACB0D5800B0B500 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				055F5B351ACB029D00B0B500 /* ViewController.swift */,
+				055F5B591ACB0D8300B0B500 /* CardsViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				055F5B361ACB029D00B0B500 /* ViewController.swift in Sources */,
+				055F5B571ACB0A4800B0B500 /* SwipeView.swift in Sources */,
+				055F5B5A1ACB0D8300B0B500 /* CardsViewController.swift in Sources */,
+				055F5B551ACB031800B0B500 /* CardView.swift in Sources */,
 				055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
