@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B331ACB029D00B0B500 /* AppDelegate.swift */; };
+		055F5B361ACB029D00B0B500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B351ACB029D00B0B500 /* ViewController.swift */; };
+		055F5B391ACB029D00B0B500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055F5B371ACB029D00B0B500 /* Main.storyboard */; };
+		055F5B3B1ACB029D00B0B500 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055F5B3A1ACB029D00B0B500 /* Images.xcassets */; };
+		055F5B3E1ACB029D00B0B500 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055F5B3C1ACB029D00B0B500 /* LaunchScreen.xib */; };
+		055F5B4A1ACB029E00B0B500 /* TindergramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B491ACB029E00B0B500 /* TindergramTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		055F5B441ACB029E00B0B500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055F5B261ACB029D00B0B500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 055F5B2D1ACB029D00B0B500;
+			remoteInfo = Tindergram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		055F5B2E1ACB029D00B0B500 /* Tindergram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindergram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		055F5B321ACB029D00B0B500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		055F5B331ACB029D00B0B500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		055F5B351ACB029D00B0B500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		055F5B381ACB029D00B0B500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		055F5B3A1ACB029D00B0B500 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		055F5B3D1ACB029D00B0B500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		055F5B431ACB029E00B0B500 /* TindergramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TindergramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		055F5B481ACB029E00B0B500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		055F5B491ACB029E00B0B500 /* TindergramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TindergramTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		055F5B2B1ACB029D00B0B500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055F5B401ACB029E00B0B500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		055F5B251ACB029D00B0B500 = {
+			isa = PBXGroup;
+			children = (
+				055F5B301ACB029D00B0B500 /* Tindergram */,
+				055F5B461ACB029E00B0B500 /* TindergramTests */,
+				055F5B2F1ACB029D00B0B500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		055F5B2F1ACB029D00B0B500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				055F5B2E1ACB029D00B0B500 /* Tindergram.app */,
+				055F5B431ACB029E00B0B500 /* TindergramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		055F5B301ACB029D00B0B500 /* Tindergram */ = {
+			isa = PBXGroup;
+			children = (
+				055F5B331ACB029D00B0B500 /* AppDelegate.swift */,
+				055F5B351ACB029D00B0B500 /* ViewController.swift */,
+				055F5B371ACB029D00B0B500 /* Main.storyboard */,
+				055F5B3A1ACB029D00B0B500 /* Images.xcassets */,
+				055F5B3C1ACB029D00B0B500 /* LaunchScreen.xib */,
+				055F5B311ACB029D00B0B500 /* Supporting Files */,
+			);
+			path = Tindergram;
+			sourceTree = "<group>";
+		};
+		055F5B311ACB029D00B0B500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				055F5B321ACB029D00B0B500 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		055F5B461ACB029E00B0B500 /* TindergramTests */ = {
+			isa = PBXGroup;
+			children = (
+				055F5B491ACB029E00B0B500 /* TindergramTests.swift */,
+				055F5B471ACB029E00B0B500 /* Supporting Files */,
+			);
+			path = TindergramTests;
+			sourceTree = "<group>";
+		};
+		055F5B471ACB029E00B0B500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				055F5B481ACB029E00B0B500 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		055F5B2D1ACB029D00B0B500 /* Tindergram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055F5B4D1ACB029E00B0B500 /* Build configuration list for PBXNativeTarget "Tindergram" */;
+			buildPhases = (
+				055F5B2A1ACB029D00B0B500 /* Sources */,
+				055F5B2B1ACB029D00B0B500 /* Frameworks */,
+				055F5B2C1ACB029D00B0B500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tindergram;
+			productName = Tindergram;
+			productReference = 055F5B2E1ACB029D00B0B500 /* Tindergram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		055F5B421ACB029E00B0B500 /* TindergramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055F5B501ACB029E00B0B500 /* Build configuration list for PBXNativeTarget "TindergramTests" */;
+			buildPhases = (
+				055F5B3F1ACB029E00B0B500 /* Sources */,
+				055F5B401ACB029E00B0B500 /* Frameworks */,
+				055F5B411ACB029E00B0B500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				055F5B451ACB029E00B0B500 /* PBXTargetDependency */,
+			);
+			name = TindergramTests;
+			productName = TindergramTests;
+			productReference = 055F5B431ACB029E00B0B500 /* TindergramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		055F5B261ACB029D00B0B500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = thomas;
+				TargetAttributes = {
+					055F5B2D1ACB029D00B0B500 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					055F5B421ACB029E00B0B500 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 055F5B2D1ACB029D00B0B500;
+					};
+				};
+			};
+			buildConfigurationList = 055F5B291ACB029D00B0B500 /* Build configuration list for PBXProject "Tindergram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 055F5B251ACB029D00B0B500;
+			productRefGroup = 055F5B2F1ACB029D00B0B500 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				055F5B2D1ACB029D00B0B500 /* Tindergram */,
+				055F5B421ACB029E00B0B500 /* TindergramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		055F5B2C1ACB029D00B0B500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055F5B391ACB029D00B0B500 /* Main.storyboard in Resources */,
+				055F5B3E1ACB029D00B0B500 /* LaunchScreen.xib in Resources */,
+				055F5B3B1ACB029D00B0B500 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055F5B411ACB029E00B0B500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		055F5B2A1ACB029D00B0B500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055F5B361ACB029D00B0B500 /* ViewController.swift in Sources */,
+				055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055F5B3F1ACB029E00B0B500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055F5B4A1ACB029E00B0B500 /* TindergramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		055F5B451ACB029E00B0B500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 055F5B2D1ACB029D00B0B500 /* Tindergram */;
+			targetProxy = 055F5B441ACB029E00B0B500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		055F5B371ACB029D00B0B500 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				055F5B381ACB029D00B0B500 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		055F5B3C1ACB029D00B0B500 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				055F5B3D1ACB029D00B0B500 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		055F5B4B1ACB029E00B0B500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		055F5B4C1ACB029E00B0B500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		055F5B4E1ACB029E00B0B500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tindergram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		055F5B4F1ACB029E00B0B500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tindergram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		055F5B511ACB029E00B0B500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TindergramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tindergram.app/Tindergram";
+			};
+			name = Debug;
+		};
+		055F5B521ACB029E00B0B500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TindergramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tindergram.app/Tindergram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		055F5B291ACB029D00B0B500 /* Build configuration list for PBXProject "Tindergram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055F5B4B1ACB029E00B0B500 /* Debug */,
+				055F5B4C1ACB029E00B0B500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		055F5B4D1ACB029E00B0B500 /* Build configuration list for PBXNativeTarget "Tindergram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055F5B4E1ACB029E00B0B500 /* Debug */,
+				055F5B4F1ACB029E00B0B500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		055F5B501ACB029E00B0B500 /* Build configuration list for PBXNativeTarget "TindergramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055F5B511ACB029E00B0B500 /* Debug */,
+				055F5B521ACB029E00B0B500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 055F5B261ACB029D00B0B500 /* Project object */;
+}
