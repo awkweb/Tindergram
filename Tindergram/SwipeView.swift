@@ -11,7 +11,14 @@ import UIKit
 
 class SwipeView: UIView {
   
+  enum Direction {
+    case None
+    case Right
+    case Left
+  }
+  
   private let card: CardView = CardView()
+  private var originalPoint: CGPoint?
   
   required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
@@ -29,19 +36,51 @@ class SwipeView: UIView {
   }
   
   private func initialize() {
-    backgroundColor = UIColor.clearColor()
+    backgroundColor = UIColor.redColor() // Change back to clearColor
     addSubview(card)
     
-    card.setTranslatesAutoresizingMaskIntoConstraints(false) // remove any predefined constraints
-    
-    setConstraints()
+    addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
+    card.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
   }
   
-  private func setConstraints() {
+  func dragged(gestureRecognizer: UIPanGestureRecognizer) {
+    let distance = gestureRecognizer.translationInView(self)
+    println("distance x: \(distance.x), y: \(distance.y)")
     
-    addConstraint(NSLayoutConstraint(item: card, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: 0))
-    addConstraint(NSLayoutConstraint(item: card, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: 0))
-    addConstraint(NSLayoutConstraint(item: card, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1.0, constant: 0))
-    addConstraint(NSLayoutConstraint(item: card, attribute: .Trailing, relatedBy: .Equal, toItem: self, attribute: .Trailing, multiplier: 1.0, constant: 0))
+    switch gestureRecognizer.state {
+    case .Began:
+     originalPoint = center
+    case .Changed:
+      let rotationPercentage = min(distance.x/(self.superview!.frame.width/2), 1)
+      let rotationAngle = (CGFloat(2*M_PI/16)*rotationPercentage)
+      transform = CGAffineTransformMakeRotation(rotationAngle)
+      center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
+    case .Ended:
+      resetViewPositionAndTransformations()
+    default:
+      println("Default triggered for GestureRecognizer")
+      break
+    }
   }
+  
+  func swipe(direction: Direction) {
+    if direction == .None {
+      return
+    }
+    var parentWidth = superview!.frame.size.width
+    if direction == .Left {
+      parentWidth *= -1
+    }
+    UIView.animateWithDuration(0.2, animations: { () -> Void in
+      self.center.x = self.frame.origin.x + parentWidth
+    })
+  }
+  
+  private func resetViewPositionAndTransformations() {
+    UIView.animateWithDuration(0.2, animations: { () -> Void in
+      self.center = self.originalPoint!
+      self.transform = CGAffineTransformMakeRotation(0)
+    })
+  }
+  
 }
