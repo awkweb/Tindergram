@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+
+protocol SwipeViewDelegate: class {
+  func swipedLeft()
+  func swipedRight()
+}
+
 class SwipeView: UIView {
   
   enum Direction {
@@ -16,6 +22,8 @@ class SwipeView: UIView {
     case Right
     case Left
   }
+  
+  weak var delegate: SwipeViewDelegate?
   
   private let card: CardView = CardView()
   private var originalPoint: CGPoint?
@@ -48,31 +56,45 @@ class SwipeView: UIView {
     println("distance x: \(distance.x), y: \(distance.y)")
     
     switch gestureRecognizer.state {
+      
     case .Began:
-     originalPoint = center
+      originalPoint = center
+      
     case .Changed:
       let rotationPercentage = min(distance.x/(self.superview!.frame.width/2), 1)
       let rotationAngle = (CGFloat(2*M_PI/16)*rotationPercentage)
       transform = CGAffineTransformMakeRotation(rotationAngle)
       center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
+      
     case .Ended:
-      resetViewPositionAndTransformations()
+      if abs(distance.x) < frame.width/4 {
+        resetViewPositionAndTransformations()
+      } else {
+        swipeDirection(distance.x > 0 ? .Right : .Left)
+      }
+      
     default:
       println("Default triggered for GestureRecognizer")
       break
     }
   }
   
-  func swipe(direction: Direction) {
-    if direction == .None {
+  func swipeDirection(s: Direction) {
+    if s == .None {
       return
     }
     var parentWidth = superview!.frame.size.width
-    if direction == .Left {
+    if s == .Left {
       parentWidth *= -1
     }
-    UIView.animateWithDuration(0.2, animations: { () -> Void in
+    
+    UIView.animateWithDuration(0.2, animations: {
       self.center.x = self.frame.origin.x + parentWidth
+      }, completion: {
+        success in
+        if let d = self.delegate {
+          s == .Right ? d.swipedRight() : d.swipedLeft() // protocol functions
+        }
     })
   }
   
