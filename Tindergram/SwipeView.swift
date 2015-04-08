@@ -56,23 +56,19 @@ class SwipeView: UIView {
     println("distance x: \(distance.x), y: \(distance.y)")
     
     switch gestureRecognizer.state {
-      
     case .Began:
       originalPoint = center
-      
     case .Changed:
       let rotationPercentage = min(distance.x/(self.superview!.frame.width/2), 1)
       let rotationAngle = (CGFloat(2*M_PI/16)*rotationPercentage)
       transform = CGAffineTransformMakeRotation(rotationAngle)
       center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
-      
     case .Ended:
       if abs(distance.x) < frame.width/4 {
         resetViewPositionAndTransformations()
       } else {
-        swipeDirection(distance.x > 0 ? .Right : .Left)
+        swipeDirection(distance.x > 0 ? .Right : .Left) // ternary operator - if true, first condition, otherwise second
       }
-      
     default:
       println("Default triggered for GestureRecognizer")
       break
