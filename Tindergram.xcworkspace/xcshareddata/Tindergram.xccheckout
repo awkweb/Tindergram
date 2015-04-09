@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0DE5D87-4765-497F-8B7C-8A2F4C9E5114</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tindergram</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5E07E6B9C150A7ACF69950BD1C4E5E8E4A208804</key>
+		<string>https://github.com/thomasmeagher/Tindergram.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tindergram.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5E07E6B9C150A7ACF69950BD1C4E5E8E4A208804</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thomasmeagher/Tindergram.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5E07E6B9C150A7ACF69950BD1C4E5E8E4A208804</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5E07E6B9C150A7ACF69950BD1C4E5E8E4A208804</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Tindergram</string>
+		</dict>
+	</array>
+</dict>
+</plist>

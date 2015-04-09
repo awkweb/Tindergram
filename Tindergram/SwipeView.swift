@@ -46,11 +46,6 @@ class SwipeView: UIView {
     initialize()
   }
   
-  override init() {
-    super.init()
-    initialize()
-  }
-  
   private func initialize() {
     backgroundColor = UIColor.redColor() // Change back to clearColor
     

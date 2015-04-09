@@ -24,11 +24,6 @@ class CardView: UIView {
     initialize()
   }
   
-  override init() {
-    super.init()
-    initialize()
-  }
-  
   private func initialize() {
     imageView.setTranslatesAutoresizingMaskIntoConstraints(false)
     imageView.backgroundColor = UIColor.redColor()
