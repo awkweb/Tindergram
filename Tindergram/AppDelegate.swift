@@ -16,12 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     Parse.setApplicationId("ugrYkntHZyF6EU8yocAPBdqYklXaQIf06Xqttobp", clientKey: "A240mQO9ac07C60tcItS9WXPSehp0hSogcJZiv25")
-    
-    // let testObject = PFObject(className: "TestObject")
-    // testObject["foo"] = "bar"
-    // testObject.save()
+    PFFacebookUtils.initializeFacebook()
     
     return true
+  }
+  
+  func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+    return FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication, withSession: PFFacebookUtils.session())
+  }
+  
+  func applicationDidBecomeActive(application: UIApplication) {
+    FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
+  }
+  
+  func applicationWillTerminate(application: UIApplication) {
+    PFFacebookUtils.session()?.close()
   }
 
 }

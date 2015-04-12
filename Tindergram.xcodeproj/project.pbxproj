@@ -16,6 +16,7 @@
 		055F5B551ACB031800B0B500 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B541ACB031800B0B500 /* CardView.swift */; };
 		055F5B571ACB0A4800B0B500 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B561ACB0A4800B0B500 /* SwipeView.swift */; };
 		055F5B5A1ACB0D8300B0B500 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B591ACB0D8300B0B500 /* CardsViewController.swift */; };
+		056FE5281AD9F5E900C656B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056FE5271AD9F5E900C656B9 /* LoginViewController.swift */; };
 		05D14E111AD6DB2100754A06 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D14E0F1AD6DB2100754A06 /* Parse.framework */; };
 		05D14E121AD6DB2100754A06 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D14E101AD6DB2100754A06 /* ParseFacebookUtils.framework */; };
 		05D14E141AD6DB7900754A06 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D14E131AD6DB7900754A06 /* AudioToolbox.framework */; };
@@ -56,6 +57,7 @@
 		055F5B541ACB031800B0B500 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		055F5B561ACB0A4800B0B500 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		055F5B591ACB0D8300B0B500 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		056FE5271AD9F5E900C656B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		05D14E0F1AD6DB2100754A06 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		05D14E101AD6DB2100754A06 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		05D14E131AD6DB7900754A06 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -180,6 +182,7 @@
 		055F5B581ACB0D5800B0B500 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				056FE5271AD9F5E900C656B9 /* LoginViewController.swift */,
 				055F5B351ACB029D00B0B500 /* ViewController.swift */,
 				055F5B591ACB0D8300B0B500 /* CardsViewController.swift */,
 			);
@@ -358,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056FE5281AD9F5E900C656B9 /* LoginViewController.swift in Sources */,
 				055F5B361ACB029D00B0B500 /* ViewController.swift in Sources */,
 				055F5B571ACB0A4800B0B500 /* SwipeView.swift in Sources */,
 				055F5B5A1ACB0D8300B0B500 /* CardsViewController.swift in Sources */,

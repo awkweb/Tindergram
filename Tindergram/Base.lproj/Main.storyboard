@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4FC-Mv-T8r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ja2-fU-qkK">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,7 +20,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="-361"/>
+            <point key="canvasLocation" x="1922" y="-341"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Sjf-aD-3IJ">
+            <objects>
+                <viewController id="Ja2-fU-qkK" customClass="LoginViewController" customModule="Tindergram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cNr-tu-jZJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="u6c-N9-cIv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4JA-AC-YS9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSw-Ye-gn3">
+                                <rect key="frame" x="229" y="285" width="143" height="30"/>
+                                <state key="normal" title="Login with Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="Ja2-fU-qkK" eventType="touchUpInside" id="uET-wr-M9d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="qSw-Ye-gn3" secondAttribute="centerX" constant="-0.5" id="4W6-iL-ep7"/>
+                            <constraint firstAttribute="centerY" secondItem="qSw-Ye-gn3" secondAttribute="centerY" id="ejV-mI-PGY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0p-5I-3v2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256" y="337"/>
         </scene>
         <!--Cards View Controller-->
         <scene sceneID="Qji-3L-tus">
@@ -56,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cra-Rv-Wfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="337"/>
+            <point key="canvasLocation" x="2604" y="337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Qb-WH-0E5">
@@ -74,7 +107,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rin-gi-xH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="337"/>
+            <point key="canvasLocation" x="1930" y="337"/>
         </scene>
     </scenes>
 </document>
