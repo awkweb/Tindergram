@@ -28,18 +28,15 @@ class LoginViewController: UIViewController {
         FBRequestConnection.startWithGraphPath("/me?fields=picture,first_name,birthday,gender", completionHandler: {
           connection, result, error in
           
-          println("result: \(result)\n")
-          println("user: \(user)")
-          
           var r = result as! NSDictionary
           
-          user["firstName"] = r["first_name"]
-          user["gender"] = r["gender"]
-          user["picture"] = ((r["picture"] as! NSDictionary)["data"] as! NSDictionary)["url"]
+          user!["firstName"] = r["first_name"]
+          user!["gender"] = r["gender"]
+          user!["picture"] = ((r["picture"] as! NSDictionary)["data"] as! NSDictionary)["url"]
           
           var dateFormatter = NSDateFormatter()
           dateFormatter.dateFormat = "MM/dd/yyyy"
-          user["birthDay"] = dateFormatter.dateFromString(r["birthday"] as! String)
+          user!["birthDay"] = dateFormatter.dateFromString(r["birthday"] as! String)
           
           user!.saveInBackgroundWithBlock({
             success, error in
