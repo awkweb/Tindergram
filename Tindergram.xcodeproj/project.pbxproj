@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05501B921ADD7E61006C04A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05501B911ADD7E61006C04A6 /* User.swift */; };
+		05501B941ADD80AC006C04A6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05501B931ADD80AC006C04A6 /* ProfileViewController.swift */; };
 		055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B331ACB029D00B0B500 /* AppDelegate.swift */; };
 		055F5B361ACB029D00B0B500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B351ACB029D00B0B500 /* ViewController.swift */; };
 		055F5B391ACB029D00B0B500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055F5B371ACB029D00B0B500 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05501B911ADD7E61006C04A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		05501B931ADD80AC006C04A6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		055F5B2E1ACB029D00B0B500 /* Tindergram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindergram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055F5B321ACB029D00B0B500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		055F5B331ACB029D00B0B500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05501B901ADD7DE4006C04A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05501B911ADD7E61006C04A6 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		055F5B251ACB029D00B0B500 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				055F5B331ACB029D00B0B500 /* AppDelegate.swift */,
+				05501B901ADD7DE4006C04A6 /* Models */,
 				055F5B581ACB0D5800B0B500 /* ViewControllers */,
 				055F5B531ACB02E200B0B500 /* Views */,
 				055F5B371ACB029D00B0B500 /* Main.storyboard */,
@@ -185,6 +198,7 @@
 				056FE5271AD9F5E900C656B9 /* LoginViewController.swift */,
 				055F5B351ACB029D00B0B500 /* ViewController.swift */,
 				055F5B591ACB0D8300B0B500 /* CardsViewController.swift */,
+				05501B931ADD80AC006C04A6 /* ProfileViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -367,6 +381,8 @@
 				055F5B5A1ACB0D8300B0B500 /* CardsViewController.swift in Sources */,
 				055F5B551ACB031800B0B500 /* CardView.swift in Sources */,
 				055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */,
+				05501B941ADD80AC006C04A6 /* ProfileViewController.swift in Sources */,
+				05501B921ADD7E61006C04A6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
