@@ -23,6 +23,14 @@ class CardsViewController: UIViewController {
   var backCard: Card?
   var frontCard: Card?
   
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    navigationItem.titleView = UIImageView(image: UIImage(named: "nav-header"))
+    let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: .Plain, target: self, action: "goToProfile:")
+    navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -32,6 +40,10 @@ class CardsViewController: UIViewController {
     cardStackView.addSubview(backCard!.swipeView)
     frontCard = createCard(frontCardTopMargin)
     cardStackView.addSubview(frontCard!.swipeView)
+  }
+  
+  func goToProfile(button: UIBarButtonItem) {
+      pageController.goToPreviousVC()
   }
 
   private func createCardFrame(topMargin: CGFloat) -> CGRect {

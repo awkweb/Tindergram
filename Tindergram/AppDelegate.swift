@@ -15,14 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    Parse.setApplicationId("ugrYkntHZyF6EU8yocAPBdqYklXaQIf06Xqttobp", clientKey: "A240mQO9ac07C60tcItS9WXPSehp0hSogcJZiv25")
+    Parse.setApplicationId("XXX", clientKey: "YYY")
     PFFacebookUtils.initializeFacebook()
     
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     var initialViewController: UIViewController
     
     if PFUser.currentUser() != nil {
-      initialViewController = storyboard.instantiateViewControllerWithIdentifier("CardsNavController") as! UIViewController
+      initialViewController = pageController
     } else {
       initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
     }
