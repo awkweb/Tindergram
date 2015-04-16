@@ -47,7 +47,7 @@ class SwipeView: UIView {
   }
   
   private func initialize() {
-    backgroundColor = UIColor.redColor() // Change back to clearColor
+    backgroundColor = UIColor.clearColor()
     
     addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
   }
