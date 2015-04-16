@@ -108,7 +108,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="472"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Su-2X-72R">
-                                <rect key="frame" x="16" y="559" width="254" height="21"/>
+                                <rect key="frame" x="16" y="559" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -118,8 +118,8 @@
                         <constraints>
                             <constraint firstItem="3f6-h5-qEn" firstAttribute="top" secondItem="Uln-fp-zL5" secondAttribute="bottom" id="8ZU-To-tMI"/>
                             <constraint firstItem="3f6-h5-qEn" firstAttribute="leading" secondItem="8xx-Pr-Pr3" secondAttribute="leadingMargin" constant="-16" id="GR5-gA-j3T"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6Su-2X-72R" secondAttribute="trailing" constant="314" id="GoU-IC-Uge"/>
                             <constraint firstItem="OSb-BY-TXO" firstAttribute="top" secondItem="6Su-2X-72R" secondAttribute="bottom" constant="20" id="HXs-TJ-DGI"/>
+                            <constraint firstItem="6Su-2X-72R" firstAttribute="trailing" secondItem="8xx-Pr-Pr3" secondAttribute="trailingMargin" id="XZA-AL-CjS"/>
                             <constraint firstItem="6Su-2X-72R" firstAttribute="leading" secondItem="8xx-Pr-Pr3" secondAttribute="leadingMargin" id="hT8-Ar-qVn"/>
                             <constraint firstItem="6Su-2X-72R" firstAttribute="top" secondItem="3f6-h5-qEn" secondAttribute="bottom" constant="23" id="rl2-gM-Lyb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3f6-h5-qEn" secondAttribute="trailing" constant="-16" id="zff-FG-AkM"/>

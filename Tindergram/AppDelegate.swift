@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     Parse.setApplicationId("ugrYkntHZyF6EU8yocAPBdqYklXaQIf06Xqttobp", clientKey: "A240mQO9ac07C60tcItS9WXPSehp0hSogcJZiv25")
     PFFacebookUtils.initializeFacebook()
     
-    var storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
     var initialViewController: UIViewController
     
     if PFUser.currentUser() != nil {

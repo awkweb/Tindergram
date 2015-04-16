@@ -8,11 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIPageViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    view.backgroundColor = UIColor.whiteColor()
+    dataSource = self
   }
 
+}
+
+// MARK - UIPageViewControllerDataSource
+extension ViewController: UIPageViewControllerDataSource {
+  
+  func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    
+    return nil
+  }
+  
+  func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+    
+    return nil
+  }
 }
 
