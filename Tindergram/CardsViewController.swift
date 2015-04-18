@@ -111,6 +111,7 @@ extension CardsViewController: SwipeViewDelegate {
     println("left")
     if let frontCard = frontCard {
       frontCard.swipeView.removeFromSuperview()
+      saveSkip(frontCard.user)
       switchCards()
     }
   }
@@ -119,6 +120,7 @@ extension CardsViewController: SwipeViewDelegate {
     println("right")
     if let frontCard = frontCard {
       frontCard.swipeView.removeFromSuperview()
+      saveLike(frontCard.user)
       switchCards()
     }
   }

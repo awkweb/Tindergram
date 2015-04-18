@@ -25,10 +25,13 @@ class SwipeView: UIView {
   
   weak var delegate: SwipeViewDelegate?
   
+  let overlay: UIImageView = UIImageView()
+  var direction: Direction?
+  
   var innerView: UIView? {
     didSet {
       if let v = innerView {
-        addSubview(v)
+        insertSubview(v, belowSubview: overlay)
         v.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
       }
     }
@@ -50,6 +53,9 @@ class SwipeView: UIView {
     backgroundColor = UIColor.clearColor()
     
     addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
+    
+    overlay.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+    addSubview(overlay)
   }
   
   func dragged(gestureRecognizer: UIPanGestureRecognizer) {
@@ -62,8 +68,10 @@ class SwipeView: UIView {
     case .Changed:
       let rotationPercentage = min(distance.x/(self.superview!.frame.width/2), 1)
       let rotationAngle = (CGFloat(2*M_PI/16)*rotationPercentage)
+      
       transform = CGAffineTransformMakeRotation(rotationAngle)
       center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
+      updateOverlay(distance.x)
     case .Ended:
       if abs(distance.x) < frame.width/4 {
         resetViewPositionAndTransformations()
@@ -95,10 +103,23 @@ class SwipeView: UIView {
     })
   }
   
+  private func updateOverlay(distance: CGFloat) {
+    var newDirection: Direction
+    newDirection = distance < 0 ? .Left : .Right
+    
+    if newDirection != direction {
+      direction = newDirection
+      overlay.image = direction == .Right ? UIImage(named: "yeah-stamp") : UIImage(named: "nah-stamp")
+    }
+    overlay.alpha = abs(distance) / (superview!.frame.width / 2)
+  }
+  
   private func resetViewPositionAndTransformations() {
     UIView.animateWithDuration(0.2, animations: { () -> Void in
       self.center = self.originalPoint!
       self.transform = CGAffineTransformMakeRotation(0)
+      
+      self.overlay.alpha = 0
     })
   }
   
