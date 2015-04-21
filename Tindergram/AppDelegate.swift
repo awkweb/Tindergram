@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    Parse.setApplicationId("XXX", clientKey: "YYY")
+    Parse.setApplicationId(parseAppID, clientKey: parseClientKey)
     PFFacebookUtils.initializeFacebook()
     
     let storyboard = UIStoryboard(name: "Main", bundle: nil)

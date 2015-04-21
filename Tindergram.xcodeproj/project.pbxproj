@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050638211AE5E1E700E7CE07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050638201AE5E1E700E7CE07 /* Constants.swift */; };
 		05501B921ADD7E61006C04A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05501B911ADD7E61006C04A6 /* User.swift */; };
 		05501B941ADD80AC006C04A6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05501B931ADD80AC006C04A6 /* ProfileViewController.swift */; };
 		055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B331ACB029D00B0B500 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050638201AE5E1E700E7CE07 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05501B911ADD7E61006C04A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		05501B931ADD80AC006C04A6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		055F5B2E1ACB029D00B0B500 /* Tindergram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindergram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 		055F5B311ACB029D00B0B500 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				050638201AE5E1E700E7CE07 /* Constants.swift */,
 				055F5B321ACB029D00B0B500 /* Info.plist */,
 				05D14E291AD6DC6E00754A06 /* Bridging-Header.h */,
 			);
@@ -383,6 +386,7 @@
 				055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */,
 				05501B941ADD80AC006C04A6 /* ProfileViewController.swift in Sources */,
 				05501B921ADD7E61006C04A6 /* User.swift in Sources */,
+				050638211AE5E1E700E7CE07 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

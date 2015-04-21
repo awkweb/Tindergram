@@ -21,6 +21,9 @@ class CardsViewController: UIViewController {
   
   @IBOutlet weak var cardStackView: UIView!
   
+  @IBOutlet weak var nahButton: UIButton!
+  @IBOutlet weak var yeahButton: UIButton!
+  
   var backCard: Card?
   var frontCard: Card?
   
@@ -30,7 +33,7 @@ class CardsViewController: UIViewController {
     super.viewWillAppear(animated)
     
     navigationItem.titleView = UIImageView(image: UIImage(named: "nav-header"))
-    let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: .Plain, target: self, action: "goToProfile:")
+    let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "profile-header"), style: .Plain, target: self, action: "goToProfile:")
     navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
   }
   
@@ -38,6 +41,8 @@ class CardsViewController: UIViewController {
     super.viewDidLoad()
     
     cardStackView.backgroundColor = UIColor.clearColor()
+    nahButton.setImage(UIImage(named: "nah-button-pressed"), forState: .Highlighted)
+    yeahButton.setImage(UIImage(named: "yeah-button-pressed"), forState: .Highlighted)
     
     fetchUnviewedUsers({
       returnUsers in
@@ -54,6 +59,18 @@ class CardsViewController: UIViewController {
         self.cardStackView.insertSubview(self.backCard!.swipeView, belowSubview: self.frontCard!.swipeView)
       }
     })
+  }
+  
+  @IBAction func nahButtonPressed(sender: UIButton) {
+    if let card = frontCard {
+      card.swipeView.swipeDirection(.Left)
+    }
+  }
+  
+  @IBAction func yeahButtonPressed(sender: UIButton) {
+    if let card = frontCard {
+      card.swipeView.swipeDirection(.Right)
+    }
   }
   
   func goToProfile(button: UIBarButtonItem) {
