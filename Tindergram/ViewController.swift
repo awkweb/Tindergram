@@ -14,7 +14,8 @@ class ViewController: UIPageViewController {
   
   let cardsVC: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("CardsNavController") as! UIViewController
   let profileVC: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileNavController") as! UIViewController
-
+  let matchesVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MatchesNavController") as! UIViewController
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -32,7 +33,7 @@ class ViewController: UIPageViewController {
     let previousVC = pageViewController(self, viewControllerBeforeViewController: viewControllers[0] as! UIViewController)!
     setViewControllers([previousVC], direction: .Reverse, animated: true, completion: nil)
   }
-
+  
 }
 
 // MARK - UIPageViewControllerDataSource
@@ -45,6 +46,8 @@ extension ViewController: UIPageViewControllerDataSource {
       return profileVC
     case profileVC:
       return nil
+    case matchesVC:
+      return cardsVC
     default:
       return nil
     }
@@ -54,7 +57,7 @@ extension ViewController: UIPageViewControllerDataSource {
     
     switch viewController {
     case cardsVC:
-      return nil
+      return matchesVC
     case profileVC:
       return cardsVC
     default:

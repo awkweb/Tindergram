@@ -10,6 +10,9 @@
 		050638211AE5E1E700E7CE07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050638201AE5E1E700E7CE07 /* Constants.swift */; };
 		05501B921ADD7E61006C04A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05501B911ADD7E61006C04A6 /* User.swift */; };
 		05501B941ADD80AC006C04A6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05501B931ADD80AC006C04A6 /* ProfileViewController.swift */; };
+		055EADFB1AE6B9A500D153C6 /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EADFA1AE6B9A500D153C6 /* MatchesTableViewController.swift */; };
+		055EADFD1AE6B9D900D153C6 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EADFC1AE6B9D900D153C6 /* UserCell.swift */; };
+		055EADFF1AE6BCF800D153C6 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EADFE1AE6BCF800D153C6 /* Match.swift */; };
 		055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B331ACB029D00B0B500 /* AppDelegate.swift */; };
 		055F5B361ACB029D00B0B500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F5B351ACB029D00B0B500 /* ViewController.swift */; };
 		055F5B391ACB029D00B0B500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055F5B371ACB029D00B0B500 /* Main.storyboard */; };
@@ -50,6 +53,9 @@
 		050638201AE5E1E700E7CE07 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05501B911ADD7E61006C04A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		05501B931ADD80AC006C04A6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		055EADFA1AE6B9A500D153C6 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
+		055EADFC1AE6B9D900D153C6 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		055EADFE1AE6BCF800D153C6 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		055F5B2E1ACB029D00B0B500 /* Tindergram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindergram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055F5B321ACB029D00B0B500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		055F5B331ACB029D00B0B500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				05501B911ADD7E61006C04A6 /* User.swift */,
+				055EADFE1AE6BCF800D153C6 /* Match.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 			children = (
 				055F5B541ACB031800B0B500 /* CardView.swift */,
 				055F5B561ACB0A4800B0B500 /* SwipeView.swift */,
+				055EADFC1AE6B9D900D153C6 /* UserCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 				055F5B351ACB029D00B0B500 /* ViewController.swift */,
 				055F5B591ACB0D8300B0B500 /* CardsViewController.swift */,
 				05501B931ADD80AC006C04A6 /* ProfileViewController.swift */,
+				055EADFA1AE6B9A500D153C6 /* MatchesTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -382,11 +391,14 @@
 				055F5B361ACB029D00B0B500 /* ViewController.swift in Sources */,
 				055F5B571ACB0A4800B0B500 /* SwipeView.swift in Sources */,
 				055F5B5A1ACB0D8300B0B500 /* CardsViewController.swift in Sources */,
+				055EADFB1AE6B9A500D153C6 /* MatchesTableViewController.swift in Sources */,
 				055F5B551ACB031800B0B500 /* CardView.swift in Sources */,
 				055F5B341ACB029D00B0B500 /* AppDelegate.swift in Sources */,
 				05501B941ADD80AC006C04A6 /* ProfileViewController.swift in Sources */,
 				05501B921ADD7E61006C04A6 /* User.swift in Sources */,
+				055EADFD1AE6B9D900D153C6 /* UserCell.swift in Sources */,
 				050638211AE5E1E700E7CE07 /* Constants.swift in Sources */,
+				055EADFF1AE6BCF800D153C6 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,8 +33,10 @@ class CardsViewController: UIViewController {
     super.viewWillAppear(animated)
     
     navigationItem.titleView = UIImageView(image: UIImage(named: "nav-header"))
-    let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "profile-header"), style: .Plain, target: self, action: "goToProfile:")
+    let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "profile-button"), style: .Plain, target: self, action: "goToProfile:")
     navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
+    let rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "chat-header"), style: .Plain, target: self, action: "goToMatches:")
+    navigationItem.setRightBarButtonItem(rightBarButtonItem, animated: true)
   }
   
   override func viewDidLoad() {
@@ -75,6 +77,10 @@ class CardsViewController: UIViewController {
   
   func goToProfile(button: UIBarButtonItem) {
       pageController.goToPreviousVC()
+  }
+  
+  func goToMatches(button: UIBarButtonItem) {
+    pageController.goToNextVC()
   }
 
   private func createCardFrame(topMargin: CGFloat) -> CGRect {
