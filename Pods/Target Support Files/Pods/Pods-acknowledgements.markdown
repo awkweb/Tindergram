@@ -232,6 +232,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    limitations under the License.
 
 
+## Firebase
+
+https://www.firebase.com/terms/terms-of-service.html
+
 ## JSQMessagesViewController
 
 
