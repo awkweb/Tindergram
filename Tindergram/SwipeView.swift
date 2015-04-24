@@ -59,7 +59,6 @@ class SwipeView: UIView {
   
   func dragged(gestureRecognizer: UIPanGestureRecognizer) {
     let distance = gestureRecognizer.translationInView(self)
-    println("distance x: \(distance.x), y: \(distance.y)")
     
     switch gestureRecognizer.state {
     
