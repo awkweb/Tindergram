@@ -1,5 +1,5 @@
 # Tindergram
-Tinder clone in Swift.
+Tinder clone in Swift, using Parse, Facebook, and Firebase.
 
 ## How to try this out
 You have two options:
@@ -12,8 +12,8 @@ The first option is easier, but once you swipe through all my test users, you'll
 *Disclaimer: I am still developing this app so their is a chance it might break if you try to create your own. Right now everything should be working---submit an issue if you find otherwise. If you're the brave, hacker type, dive in and learn!*
 
 ## Initial Set up
-1. Clone the repo (you should star it so I know you're up to something)
-2. Open Tindergram.xcworkspace
+1. Clone the repo
+2. Open Tindergram.xcworkspace (important)
 
 ## Setting up Parse
 1. Sign up or login to [Parse](https://parse.com )
@@ -26,10 +26,16 @@ The first option is easier, but once you swipe through all my test users, you'll
 2. Add a new app
 3. Configure your info.plist and bundle identifier (the quickstart guide walks through this process)
 
+## Setting up Firebase
+*Still working on this part.*
+
 ## Wrapping Up
 1. Run the app and login
 2. Check Parse---you should now appear as a User
 3. You will want to add test users in Parse so that you have people to swipe through
 4. Enjoy
 
-*Credit to Bitfountain for their [awesome iOS 8 Course](http://bitfountain.io/courses/complete-ios8) and app assets
+## License
+Tindergram is released under the MIT license. See LICENSE for details.
+
+*Credit to Bitfountain for their [awesome iOS 8 Course](http://bitfountain.io/courses/complete-ios8) and app assets*
