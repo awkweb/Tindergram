@@ -10,3 +10,4 @@ import Foundation
 
 let parseAppID = "XXX"
 let parseClientKey = "YYY"
+let firebaseAppURL = " https://APPNAME.firebaseio.com"

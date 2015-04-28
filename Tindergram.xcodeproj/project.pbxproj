@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		050638211AE5E1E700E7CE07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050638201AE5E1E700E7CE07 /* Constants.swift */; };
+		0536378D1AF01C2F00B71DEB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0536378C1AF01C2F00B71DEB /* libicucore.dylib */; };
+		0536378F1AF01C4100B71DEB /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0536378E1AF01C4100B71DEB /* libc++.dylib */; };
+		053637911AF01C8D00B71DEB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053637901AF01C8D00B71DEB /* Message.swift */; };
 		05501B921ADD7E61006C04A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05501B911ADD7E61006C04A6 /* User.swift */; };
 		05501B941ADD80AC006C04A6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05501B931ADD80AC006C04A6 /* ProfileViewController.swift */; };
 		055EADFB1AE6B9A500D153C6 /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055EADFA1AE6B9A500D153C6 /* MatchesTableViewController.swift */; };
@@ -52,6 +55,9 @@
 
 /* Begin PBXFileReference section */
 		050638201AE5E1E700E7CE07 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0536378C1AF01C2F00B71DEB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		0536378E1AF01C4100B71DEB /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		053637901AF01C8D00B71DEB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		05501B911ADD7E61006C04A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		05501B931ADD80AC006C04A6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		055EADFA1AE6B9A500D153C6 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0536378F1AF01C4100B71DEB /* libc++.dylib in Frameworks */,
+				0536378D1AF01C2F00B71DEB /* libicucore.dylib in Frameworks */,
 				05D14E281AD6DBDC00754A06 /* libsqlite3.dylib in Frameworks */,
 				05D14E261AD6DBCB00754A06 /* libz.dylib in Frameworks */,
 				05D14E241AD6DBC200754A06 /* SystemConfiguration.framework in Frameworks */,
@@ -128,6 +136,7 @@
 			children = (
 				05501B911ADD7E61006C04A6 /* User.swift */,
 				055EADFE1AE6BCF800D153C6 /* Match.swift */,
+				053637901AF01C8D00B71DEB /* Message.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -241,6 +250,8 @@
 		064A7FF44B8588E837E3D18D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0536378E1AF01C4100B71DEB /* libc++.dylib */,
+				0536378C1AF01C2F00B71DEB /* libicucore.dylib */,
 				7EFE77E8F78EC8B3A6CA9739 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -403,6 +414,7 @@
 				055EADFD1AE6B9D900D153C6 /* UserCell.swift in Sources */,
 				050638211AE5E1E700E7CE07 /* Constants.swift in Sources */,
 				055EADFF1AE6BCF800D153C6 /* Match.swift in Sources */,
+				053637911AF01C8D00B71DEB /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

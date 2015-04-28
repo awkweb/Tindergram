@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 thomas. All rights reserved.
 //
 
+#import <Firebase/Firebase.h>
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import "FacebookSDK/FacebookSDK.h"
