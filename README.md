@@ -6,11 +6,13 @@ Tinder clone in Swift.
 - Parse backend (for storing user information)
 - Send and receive messages with Firebase
 
+![screenshots](screenshots.png)
+
 ## How to try this out
 You have two options:
 
 1. Tweet ([@thomasmeagher](https://twitter.com/thomasmeagher)) or email (tom@meagher.co) and I will give you access to my Parse DB, which contains test users
-2. Create your own Parse and Facebook app
+2. Create your own Parse, Facebook, and Firebase app
 
 The first option is easier, but once you swipe through all my test users, you'll have to wait for me to reset them. Below, I walk you through option two. If you still need help: @thomasmeagher or tom@meagher.co.
 
@@ -36,7 +38,7 @@ The first option is easier, but once you swipe through all my test users, you'll
 
 ## Wrapping Up
 1. Run the app and login
-2. Check Parse---you should now appear as a User
+2. Check Parse. If everything worked correctly, you should now appear as a user.
 3. You will want to add test users in Parse so that you have people to swipe through
 4. Enjoy
 
