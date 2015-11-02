@@ -9,12 +9,10 @@ Tinder clone in Swift.
 ![screenshots](screenshots.png)
 
 ## How to try this out
-You have two options:
-
-1. Tweet ([@thomasmeagher](https://twitter.com/thomasmeagher)) or email (tom@meagher.co) and I will give you access to my Parse DB, which contains test users
+1. Use the out-of-the-box code, with small changes
 2. Create your own Parse, Facebook, and Firebase app
 
-The first option is easier, but once you swipe through all my test users, you'll have to wait for me to reset them. Below, I walk you through option two. If you still need help: @thomasmeagher or tom@meagher.co.
+Below, I walk you through the set up. If you still need help: @thomasmeagher or tom@meagher.co.
 
 ## Initial Set up
 1. Clone the repo
