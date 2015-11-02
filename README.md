@@ -12,7 +12,7 @@ Tinder clone in Swift.
 1. Use the out-of-the-box code, with small changes
 2. Create your own Parse, Facebook, and Firebase app
 
-Below, I walk you through the set up. If you still need help: @thomasmeagher or tom@meagher.co.
+Below, I walk you through the set up. If you still need help: [@thomasmeagher](https://twitter.com/thomasmeagher) or tom@meagher.co.
 
 ## Initial Set up
 1. Clone the repo
